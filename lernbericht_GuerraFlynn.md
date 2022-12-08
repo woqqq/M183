@@ -54,6 +54,7 @@ Abgeänderter und sicherer Code mit preparedStatements:
 Die Sicherheitslücke bei dem obigen Code-Abschnitt ist, dass man bei diesem durch eine simple Manipulation des Eingabe Wertes sich als Admin anzeigen lassen kann. Dies ist hier natürlich harmlos und verändert nur die Farbe in welcher die News angezeigt werden, aber wenn dies bei einer richtigen Webseite der Fall sein würde, könnte man damit sehr viel falsches anstellen.
 Um in diesem Fall den Benutzer als Administrator darstellen zu lassen, muss man das Eingabe Feld bei der News Page anpassen und folgendes hinein schreiben:
 
+![SQLInjection](https://user-images.githubusercontent.com/69577267/206466005-69d62477-c6c9-4b48-a467-58b120dd105b.png)
 
 
 ## Verifikation
