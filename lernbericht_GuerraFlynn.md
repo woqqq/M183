@@ -11,6 +11,7 @@ In diesem Lernbericht geht es darum wie man eine Webseite vor einer SQL-Injectio
 Ich habe in diesem Projekt gelernt wie man eine SQL-Interpreter Injection anhand von preparedStatements abfängt und so eine Webseite davor sichert.
 
 ## Beschreibung
+Ursprünglicher Code:
 ```Java
       public int insert(News news) {
         final String sql = "INSERT INTO news (posted, header, detail, author, is_admin_news) VALUES ('" + new java.sql.Timestamp(news.getPosted().getTime()) + "','" +          news.getHeader() + "','" + news.getDetail() + "','" + news.getAuthor() + "'," + (news.getIsAdminNews() ? "1" : "0") + ")";
@@ -27,6 +28,7 @@ Ich habe in diesem Projekt gelernt wie man eine SQL-Interpreter Injection anhand
 
     }
 ```
+Abgeänderter und sicherer Code mit preparedStatements:
 ```Java
       public int insert(News news) {
         final String sql = "INSERT INTO news (posted, header, detail, author, is_admin_news) VALUES (?, ?, ?, ?, ?)";
@@ -48,6 +50,8 @@ Ich habe in diesem Projekt gelernt wie man eine SQL-Interpreter Injection anhand
 
     }
 ```
+
+Die Sicherheitslücke in diesem
 
 ## Verifikation
 
