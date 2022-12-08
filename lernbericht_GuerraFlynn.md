@@ -11,13 +11,43 @@ In diesem Lernbericht geht es darum wie man eine Webseite vor einer SQL-Injectio
 Ich habe in diesem Projekt gelernt wie man eine SQL-Interpreter Injection anhand von preparedStatements abfängt und so eine Webseite davor sichert.
 
 ## Beschreibung
+```Java
+      public int insert(News news) {
+        final String sql = "INSERT INTO news (posted, header, detail, author, is_admin_news) VALUES ('" + new java.sql.Timestamp(news.getPosted().getTime()) + "','" +          news.getHeader() + "','" + news.getDetail() + "','" + news.getAuthor() + "'," + (news.getIsAdminNews() ? "1" : "0") + ")";
+        int id = 0;
 
-✍️ Verwenden Sie drei verschiedene Medien, um zu zeigen, was Sie gelernt haben. Zum Beispiel:
+        try (Statement stmt = DbAccess.getConnection().createStatement()) {
+            stmt.execute(sql);
+            id = stmt.getGeneratedKeys().getInt(1);
+        } catch (SQLException e) {
+            Logger.getLogger(NewsDAO.class.getName()).log(Level.SEVERE, null, e);
+        }
 
-* Eine textliche Beschreibung
-* Ein deutliches, aussagekräftiges Bild oder eine kommentierte Bildschirm-Aufnahme
-* Ein gut dokumentierter Code-Fetzen
-* Ein Link zu einem *selbst aufgenommenen* youtube-Video oder `.gif`.
+        return id;
+
+    }
+```
+```Java
+      public int insert(News news) {
+        final String sql = "INSERT INTO news (posted, header, detail, author, is_admin_news) VALUES (?, ?, ?, ?, ?)";
+        int id = 0;
+
+        try (Connection conn = this.connect();
+                PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setTimestamp(1, new java.sql.Timestamp(news.getPosted().getTime()));
+            pstmt.setString(2, news.getHeader());
+            pstmt.setString(3, news.getDetail());
+            pstmt.setString(4, news.getAuthor());
+            pstmt.setString(5, (news.getIsAdminNews() ? "1" : "0"));
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            Logger.getLogger(NewsDAO.class.getName()).log(Level.SEVERE, null, e);
+        }
+
+        return id;
+
+    }
+```
 
 ## Verifikation
 
