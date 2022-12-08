@@ -14,7 +14,7 @@ Ich habe in diesem Projekt gelernt wie man eine SQL-Interpreter Injection anhand
 Ursprünglicher Code:
 ```Java
       public int insert(News news) {
-        final String sql = "INSERT INTO news (posted, header, detail, author, is_admin_news) VALUES ('" + new java.sql.Timestamp(news.getPosted().getTime()) + "','" +          news.getHeader() + "','" + news.getDetail() + "','" + news.getAuthor() + "'," + (news.getIsAdminNews() ? "1" : "0") + ")";
+        final String sql = "INSERT INTO news (posted, header, detail, author, is_admin_news) VALUES ('" + new java.sql.Timestamp(news.getPosted().getTime()) + "','" + news.getHeader() + "','" + news.getDetail() + "','" + news.getAuthor() + "'," + (news.getIsAdminNews() ? "1" : "0") + ")";
         int id = 0;
 
         try (Statement stmt = DbAccess.getConnection().createStatement()) {
