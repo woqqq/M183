@@ -69,4 +69,4 @@ Die Arbeit an diesem Auftrag lief relativ gut ab. Ich habe bereits schon davor m
 👎  
 Was mir zu beginn des Auftrages etwas unklar war ist wie und wo ich das PreparedStatement einsetzen musste. Dies hat sich jedoch schnell gelöst. Unter anderem hat mich der Datentyp TimeStap etwas verwirrt und ich wusste nicht ganz wie ich daraus ein PreparedStatement machen kann. Dies hat sich auch flott gelöst durch eine schnelle Googlerecherche.
 
-**VBV**: ✍️ Formulieren Sie davon ausgehend einen *handelbaren* Verbesserungsvorschlag.
+**VBV**: ✍️ Ich möchte aktiver am Unterricht vor Ort teilnehmen um so noch mehr Wissen aufzubauen. Um diese Verbesserung umzusetzen werde ich versuchen während eines Erklärungsblockes meinen Laptop zu schliessen oder jegliche unnötigen Ablenkungen zu eliminieren um mich so besser zu fokusieren.
