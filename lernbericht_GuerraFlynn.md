@@ -1,13 +1,14 @@
 # Lern-Bericht
-✍️ ggf. Ihr Gruppenname und Ihre Gruppenmitglieder
+von Flynn Guerra
 
 ## Einleitung
 
-✍️ Ein Satz, worum es in dem Projekt ging. Muss für einen externen Leser einfach zu verstehen sein.
+In diesem gesamtem Modul ging es darum, wie man eine Webseite sicher gestalten kann um die Sicherheitslücken so gering wie möglich zu behalten.
+In diesem Lernbericht geht es darum wie man eine Webseite vor einer SQL-Injection schützt.
 
 ## Was habe ich gelernt?
 
-✍️ Beschreiben Sie in einem Satz **eine** Sache, die Sie bei diesem Projekt gelernt haben und die Sie in diesem Lern-Bericht dokumentieren.
+Ich habe in diesem Projekt gelernt wie man eine SQL-Interpreter Injection anhand von preparedStatements abfängt und so eine Webseite davor sichert.
 
 ## Beschreibung
 
