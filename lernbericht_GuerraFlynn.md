@@ -63,8 +63,10 @@ Ich habe anhand den Infos aus dem Auftrag, der Inputs aus dem Unterricht von Her
 
 # Reflektion zum Arbeitsprozess
 
-👍 Überlegen Sie sich jeweils etwas, was gut an Ihrer Arbeit lief; 
+👍 Überlegen Sie sich jeweils etwas, was gut an Ihrer Arbeit lief;
+Die Arbeit an diesem Auftrag lief relativ gut ab. Ich habe bereits schon davor mit PreparedStatements an einem JavaFx gearbeitet und war mir deswegen ihrer Verwendungsweise schon bewusst. Der Refresher durch die zwei vorgegebenen Links aus dem Auftrag waren jedoch stark notwendig.
 
 👎 und etwas, was nicht gut lief.
+Was mir zu beginn des Auftrages etwas unklar war ist wie und wo ich das PreparedStatement einsetzen musste. Dies hat sich jedoch schnell gelöst. Unter anderem hat mich der Datentyp TimeStap etwas verwirrt und ich wusste nicht ganz wie ich daraus ein PreparedStatement machen kann. Dies hat sich auch flott gelöst durch eine schnelle Googlerecherche.
 
 **VBV**: ✍️ Formulieren Sie davon ausgehend einen *handelbaren* Verbesserungsvorschlag.
