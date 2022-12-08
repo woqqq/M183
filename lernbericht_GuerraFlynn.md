@@ -59,7 +59,7 @@ Um in diesem Fall den Benutzer als Administrator darstellen zu lassen, muss man 
 
 ## Verifikation
 
-✍️ Erklären Sie kurz und bündig, inwiefern die von Ihnen verwendeten Medien zeigen, was Sie gelernt haben.
+Ich habe anhand den Infos aus dem Auftrag, der Inputs aus dem Unterricht von Herrn Colic und seine zur verfügung gestellten Präsentationen gelernt, wie man eine SQL-Interpreter Injection auf einer Webseite abfangen kann anhand von preparedStatements.
 
 # Reflektion zum Arbeitsprozess
 
