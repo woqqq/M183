@@ -51,7 +51,10 @@ Abgeänderter und sicherer Code mit preparedStatements:
     }
 ```
 
-Die Sicherheitslücke in diesem
+Die Sicherheitslücke bei dem obigen Code-Abschnitt ist, dass man bei diesem durch eine simple Manipulation des Eingabe Wertes sich als Admin anzeigen lassen kann. Dies ist hier natürlich harmlos und verändert nur die Farbe in welcher die News angezeigt werden, aber wenn dies bei einer richtigen Webseite der Fall sein würde, könnte man damit sehr viel falsches anstellen.
+Um in diesem Fall den Benutzer als Administrator darstellen zu lassen, muss man das Eingabe Feld bei der News Page anpassen und folgendes hinein schreiben:
+
+
 
 ## Verifikation
 
